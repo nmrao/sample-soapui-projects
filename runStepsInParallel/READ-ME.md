@@ -18,8 +18,8 @@ On running the above, the following log is shown either in `script log` or `Log 
 ```sh
 Fri Aug 05 22:01:43 IST 2016:INFO:this script is being started
 Fri Aug 05 22:01:43 IST 2016:INFO:this script completed
-Fri Aug 05 22:01:43 IST 2016:INFO:calling step1 -1470414703043
-Fri Aug 05 22:01:43 IST 2016:INFO:calling step2 -1470414703043
+Fri Aug 05 22:01:43 IST 2016:INFO:calling step1 @ 1470414703043
+Fri Aug 05 22:01:43 IST 2016:INFO:calling step2 @ 1470414703043
 Fri Aug 05 22:01:43 IST 2016:INFO:Started step1
 Fri Aug 05 22:01:43 IST 2016:INFO:Started step2
 Fri Aug 05 22:01:43 IST 2016:INFO:step1 In progress
