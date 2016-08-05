@@ -1,7 +1,7 @@
 # Summary :
-**SoapUI** or **SoapUI NG** tool allows users to run the test cases either in *Parallell* or *Sequential* modes. But, does not all to execute test steps of a test case in *Parallell*.
+**SoapUI** or **SoapUI NG** tool allows users to run the test cases either in *Parallell* or *Sequential* modes. But, does not allow to execute test steps of a test case in *Parallell* mode.
 
-This project is to domonstrate how one can achieve the same.
+This project is to domonstrate how one can achieve the same by using *Groovy Script*.
 ### How To Use
 
   - Import the project [thread-soapui-project.xml](https://github.com/nmrao/sample-soapui-projects/blob/master/runStepsInParallel/thread-soapui-project.xml) into SoapUI tool.
