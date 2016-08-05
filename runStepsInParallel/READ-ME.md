@@ -7,6 +7,7 @@ This project is to domonstrate how one can achieve the same by using *Groovy Scr
   - Import the project [thread-soapui-project.xml](https://github.com/nmrao/sample-soapui-projects/blob/master/runStepsInParallel/thread-soapui-project.xml) into SoapUI tool.
   - Open the suite, `TestSuite 1`
   - There is case, `Test1` which contains two steps, say, `step1` and `step2`. Using groovy script type steps where each step takes different time to complete (simulating different work which may take different time in real world by having **thread sleep**)
+  - For demonstration and simplicity used `Groovy Script` type steps. User can use any different type of step as needed.
   - Next, there is another case, `runStepsParallell` with a **Groovy Script** step, which actually runs the steps of above test case in **parallell** using *multi-threading*. So, all user needs to is run this step. Running this test case will also do the same.
 
 Note :
