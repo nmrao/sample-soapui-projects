@@ -30,9 +30,9 @@ Fri Aug 05 22:01:47 IST 2016:INFO:step1 Finished @ 1470414707081
 ```
 
 ### Description :
-As you see the log, `runStepsParallell` script started, started the two steps of the test case that user wanted in threads, then it completed. 
+As you see the log, `runStepsParallell` script started, then started the two user intended steps of the test case in threads (asynchronously), then it completed finally. 
 
 However, the two steps running in separate threads -
 - both steps started same time
 - take its own time to execute a step
-- finished in different times
+- finished asynchronous steps in different times
