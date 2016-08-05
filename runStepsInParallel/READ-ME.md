@@ -34,5 +34,5 @@ As you see the log, `runStepsParallell` script started, then started the two use
 
 However, the two steps running in separate threads -
 - both steps started same time
-- take its own time to execute a step
+- take its own time to execute a step (as step2 needs 2 seconds, while step1 needs 4 seconds)
 - finished asynchronous steps in different times
