@@ -34,4 +34,4 @@ As you see the log, `runStepsParallell` script started, started the two steps of
 However, the two steps running in separate threads -
 - both steps started same time
 - take its own time to execute a step
-- finised in different times
+- finished in different times
