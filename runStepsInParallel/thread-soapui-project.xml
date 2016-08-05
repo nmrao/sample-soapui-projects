@@ -38,7 +38,7 @@ def caze = context.testCase.testSuite.getTestCaseByName('Test1')
 def threads = { testRunner, context, testcaze, log ->
 	testcaze.testStepList.each { step ->
 		Thread.start {
-			log.info "calling ${step.name} -"+System.currentTimeMillis()
+			log.info "calling ${step.name} @ "+System.currentTimeMillis()
 			step.run(testRunner, context)
 		}
 	}
