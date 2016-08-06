@@ -1,4 +1,6 @@
-# Summary :
+# Run SoapUI Test Case steps In Parallell Mode 
+
+### Summary :
 **SoapUI** or **SoapUI NG** tool allows users to run the test cases either in *Parallell* or *Sequential* modes. But, these tools do not allow users to execute test steps of a test case in *Parallell* mode. Of course, that is the way the tools are designed.
 
 This project is to domonstrate how one can achieve the same by using *Groovy Script*.
