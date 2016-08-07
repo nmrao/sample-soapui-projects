@@ -47,60 +47,7 @@ threads(testRunner, context, caze, log).join()
 log.info 'this script completed'</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00001</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00001_http_TestSuite 1_runStepsParallell_20160805220142</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>d8f13b2e-a25d-4caf-bf34-929c34d8ef3d</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2016-08-05T22:01:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2016-08-05T22:11:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2016-08-05T22:16:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2016-08-05T22:21:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2016-08-05T23:01:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2016-08-06T00:01:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2016-08-06T22:01:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2016-08-07T22:01:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2016-08-04T22:01:43+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2016-08-03T22:01:43+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:properties/>
   </con:testSuite>
