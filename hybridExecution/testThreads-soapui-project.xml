@@ -5977,7 +5977,7 @@ def runSuite = { suiteName, async = true ->
 	suite.run([] as StringToObjectMap, async)
 }
 println '=====================Running Suite  Sequencially Start====================='
-runSuite(sequenceSuites[0], false)
+sequenceSuites.each{ runSuite(it, false) }
 println '=====================Sequential Execution End==========================='
 println '+++++++++++++++++++++Paralled Execution Start++++++++++++++++++++++++++++'
 Thread.start{
