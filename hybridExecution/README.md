@@ -1,4 +1,6 @@
 # ReadMe
+
+
 Refer [here](https://community.smartbear.com/t5/SoapUI-NG/How-to-setup-TestSuite-Priority-for-a-Project-with-multiple/m-p/143643/highlight/false#M32424) for more details
 
 This project has 3 test suites. User would like to execute 
@@ -15,3 +17,6 @@ This project has 3 test suites. User would like to execute
 - Open command prompt, go to `SOAPUI_HOME/bin` directory
 - Run `testrunner.bat (or .sh)` and pass the absolute path of the above project in order to execute the project. You would see the console log which suite(s) is currently being executed. This is the main reason for asking to execute the project command line.
 - Of course, you can execute it from within `SoapUI` tool as well. In that case, just run the suite `runSuites` alone which takes care of running other suites sequentially and then in parallel.
+
+### Compatibility
+ - This soapui project has be created using SoapUI Open Source Edition version 4.5.1. I believe you should still be able to use it in higher versions of SoapUI.
