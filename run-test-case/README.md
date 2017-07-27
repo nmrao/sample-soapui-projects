@@ -7,7 +7,7 @@
   
 ### What does this template test case do?  
 
-To demonstration, this template case just takes 2 inputs from user and merges both values and return value set to the caller test case property.  
+For demonstration, this template case just takes 2 inputs from user and merges both values and return value set to the caller test case property.  
 Of course, user can add their own implementation of the template test case, change parameters etc., as per the requirement.
 
 ---
