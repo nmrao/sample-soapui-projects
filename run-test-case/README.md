@@ -9,7 +9,6 @@
   - **TestCase2:** Same as above except that property name for the return value is different i.e., `OUTPUT_VALUE`
 
 NOTE: 
- - You can find the test case descriptions in the project.   
  - Since this is for the demonstration purpose, have used only `Groovy Script` steps. Of course, you can use any type of steps as needed.
   
 # What user should do?
