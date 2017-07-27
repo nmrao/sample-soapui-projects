@@ -7,7 +7,8 @@
   
 ### What does this template test case do?  
 
-To demonstration, this template case just takes 2 inputs from user and merges both values and return value set to the caller test case property. Of course, user can add their own implementation of the template test case, change parameters etc., as per the requirement.
+To demonstration, this template case just takes 2 inputs from user and merges both values and return value set to the caller test case property.  
+Of course, user can add their own implementation of the template test case, change parameters etc., as per the requirement.
 
 ---
   - **TestCase1:** This test case calls "templateTestCase" in "Run TestCase" step. It passes two input data say INPUT1, and INPUT2. And do some computation based on input  and returns the value to a given property say `RETURN_VALUE`. Finally after finishing the "run testcase" step, print the return value in current test case, getData test step
