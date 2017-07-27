@@ -3,7 +3,7 @@
 [This project](https://github.com/nmrao/sample-soapui-projects/blob/master/run-test-case/run-testcase-soapui-project.xml) demonstrates how to use `template test case` and re-use it in different test cases. Here user can pass both input and output properties between the caller and callee test cases.
 
 ## Project Artifacts - TestSuite1
-  - templateTestCase: This is a template test case and can be reused by calling it from other test cases. Hence this test case is disabled.  
+  - **templateTestCase:** This is a template test case and can be reused by calling it from other test cases. Hence this test case is disabled.  
   
 ### What does this template test case do?  
 
