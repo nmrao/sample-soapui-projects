@@ -3,8 +3,8 @@
 [This project](https://github.com/nmrao/sample-soapui-projects/blob/master/run-test-case/run-testcase-soapui-project.xml) demonstrates how to use `template test case` and re-use it in different test cases. Here user can pass both input and output properties between the caller and callee test cases.
 
 # Project Artifacts - TestSuite1
-  - templateTestCase: This is a template test case and can be reused by calling it from other test cases. Hence this test case is disabled.
-  -- this template case just takes 2 inputs from user and merges both values and return value set to the caller test case property.
+  - templateTestCase: This is a template test case and can be reused by calling it from other test cases. Hence this test case is disabled.  
+>this template case just takes 2 inputs from user and merges both values and return value set to the caller test case property.
 ---
   - **TestCase1:** This test case calls "templateTestCase" in "Run TestCase" step. It passes two input data say INPUT1, and INPUT2. And do some computation based on input  and returns the value to a given property say `RETURN_VALUE`. Finally after finishing the "run testcase" step, print the return value in current test case, getData test step
   - **TestCase2:** Same as above except that property name for the return value is different i.e., `OUTPUT_VALUE`
