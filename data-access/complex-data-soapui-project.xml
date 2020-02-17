@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a1b255e4-e528-4b57-ab2f-acd2cf57bc48" activeEnvironment="Default" name="complex-data" resourceRoot="" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:description>Using context to access complex data</con:description><con:settings/><con:testSuite id="df2d8a0b-49d8-4e48-9a89-05d1b5d86a85" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="e9308f18-1b22-4539-88b9-869d54822cf8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListType" searchProperties="true"><con:description>Set the list of colors in setup script of the test case and access the list in groovy script test step</con:description><con:settings/><con:testStep type="groovy" name="accessColors" id="74455c7a-a60b-4ce8-bbad-0efd677f10ac"><con:settings/><con:config><script>log.info "colors : "
+context.colors.each { log.info it}</script></con:config></con:testStep><con:setupScript>context.colors = ['while', 'blue', 'green']</con:setupScript><con:properties/></con:testCase><con:testCase id="a70e0031-eafa-4806-b2ef-2a3742a821a0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ClassType" searchProperties="true"><con:description>An example to show accessing more complex type say class</con:description><con:settings/><con:testStep type="groovy" name="accessUsers" id="f925eb34-6387-47c1-b752-52f4809da6ce"><con:settings/><con:config><script>log.info 'Users with age > 40:'
+log.info context.users.findAll { it.age > 40 }
+log.info 'Minor names ;'
+log.info context.users.findAll {it.age &lt; 18 }.name</script></con:config></con:testStep><con:setupScript>import groovy.transform.Canonical
+@Canonical
+@groovy.transform.ToString(includeNames = true)
+class UserProfile {
+	String name
+	int age
+}
+def user1 = ['Jack', 45] as UserProfile
+def user2 = ['Jill', 39] as UserProfile
+def user3 = new UserProfile(name: 'Bill', age: 52)
+def user4 =new UserProfile('Jane', 17)
+def users = [user2, user1, user3, user4]
+context.users = users</con:setupScript><con:properties/></con:testCase><con:testCase id="d48014f6-e8c8-4e36-b11f-84bb2253cb83" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="BetweenScripts" searchProperties="true"><con:settings/><con:testStep type="groovy" name="setValue" id="e6839d55-6931-404a-bf80-99690d1a7736"><con:settings/><con:config><script>context.data = 'user data'</script></con:config></con:testStep><con:testStep type="groovy" name="getValue" id="d502d027-a3f9-4762-bfec-9b054f9acebe"><con:settings/><con:config><script>log.info context.data
+assert 'user data' = context.data</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
