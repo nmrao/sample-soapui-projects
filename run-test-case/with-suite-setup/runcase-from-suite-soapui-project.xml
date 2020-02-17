@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c983e747-1064-44ed-95c8-fa668db9f636" activeEnvironment="Default" name="runcase-from-suite-setup" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="/home/rsettine/Downloads/SoapUI-5.4.0/bin"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="50739f1c-a02a-4ad2-8940-c5c0c2618434" wadlVersion="http://wadl.dev.java.net/2009/02" name="Swagger Petstore" type="rest" basePath="/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://petstore.swagger.io</con:endpoint><con:endpoint>https://petstore.swagger.io</con:endpoint></con:endpoints><con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="4cd812d0-222f-401d-9d1c-e3d73bfae44c"><con:settings/><con:parameters/><con:method name="findPetsByStatus" id="e483b6bc-67f1-4875-8640-1c181fb41975" method="GET"><con:description>Multiple status values can be provided with comma separated strings
+Finds Pets by status</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>status</con:name><con:style>QUERY</con:style><con:description>Status values that need to be considered for filter</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/></con:representation></con:method></con:resource></con:interface><con:testSuite id="ebcac874-efce-4672-8219-893b6b5d7a78" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="80cfa3ef-4cc2-441d-9122-a86a43d505c6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="OnlyRunFromSuiteSetup" searchProperties="true" disabled="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="35542546-aaeb-4bfa-9d30-7865feec64d4"><con:settings/><con:config service="Swagger Petstore" resourcePath="/v2/pet/findByStatus" methodName="findPetsByStatus" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="a665a527-bd21-4ea9-82dd-c53b3bc4be49" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://petstore.swagger.io</con:endpoint><con:request/><con:originalUri>http://petstore.swagger.io/v2/pet/findByStatus</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c4efd535-aa69-476c-b086-5a40f0013e9e" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+def json = new JsonSlurper().parseText(context.response)
+assert 'Guru' == json[0].name</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="status" value="available" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="6bdc5793-08c5-45f8-b10a-50aec81990bd"><con:settings/><con:config><script>log.info 'test run from suite\'s setup script'</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e59147aa-acbc-4e5e-a4bc-d88e32ce25a6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="94664d1f-be36-4259-b623-4a1e3732fb4c"><con:settings/><con:config><script>log.info 'Executed as a test case'</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/><con:setupScript>import com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner 
+log.info 'Running Suite setup script'
+new WsdlTestCaseRunner(testSuite.testCaseList[0], null).run()
+log.info 'End of suite setup script'</con:setupScript></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
