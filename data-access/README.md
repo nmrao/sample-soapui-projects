@@ -22,7 +22,7 @@ Here, _UserProfile_ class is defined along with data.
 **accessUsers**
 Access the _users_ and do some computations.
 
-#### BetweekScripts
+#### BetweenScripts
 This is to show that it is also possible to set data in a test step and access the data in another test step.
 
 **NOTE:** It is good to share the data across project, suite. However, make sure each test case is independent. i.e., at any time, each test case should be able to run without dependent any other cases / suite / project to achieve good automation.
