@@ -15,60 +15,8 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00010</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00010_http_TestSuite1_TestCase 1_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>1cd1423c-4a9b-491f-90bb-e518db4494c8</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
+        
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true" id="f994c4ba-1e03-4361-89ee-bcb0ff293123">
       <con:settings/>
@@ -81,60 +29,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00010</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00010_http_TestSuite1_TestCase 2_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>1d5ee12e-d882-46b2-ac98-cabe901e8bd1</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 3" searchProperties="true" id="7814ecff-8da2-413e-a776-19a7fbc7f699">
       <con:settings/>
@@ -147,60 +42,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00010</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00010_http_TestSuite1_TestCase 3_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>28bb3787-db06-47bb-9db7-618a7880665d</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 4" searchProperties="true" id="bc9897a8-52b1-42e1-9224-9aa38d84fdce">
       <con:settings/>
@@ -213,60 +55,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00010</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00010_http_TestSuite1_TestCase 4_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>1602dcd1-8cf2-43d4-b1a1-f8d58c59f3b0</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 5" searchProperties="true" id="aa2e2a51-b7f0-4f96-a60a-82ec25d40de9">
       <con:settings/>
@@ -279,60 +68,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite1_TestCase 5_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>23fc457e-fccd-4f8a-8b29-f335de5701fb</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 6" searchProperties="true" id="ae8ca1fa-8b96-4408-b426-831475abf6cc">
       <con:settings/>
@@ -345,60 +81,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite1_TestCase 6_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>6e8dab5b-8de4-433f-9b8e-0b70ed0ca9e4</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 7" searchProperties="true" id="df89ff59-28c6-4eee-bdbd-651da0549280">
       <con:settings/>
@@ -411,60 +94,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite1_TestCase 7_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>22c809f0-68c4-4c15-8610-2ee471af3901</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 8" searchProperties="true" id="ad6adb8f-cc41-4a2a-a883-1109a2439263">
       <con:settings/>
@@ -477,60 +107,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite1_TestCase 8_20170608000751</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>c86e367f-06ec-493d-a1da-b00f76627f4d</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:51+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:51+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 9" searchProperties="true" id="aade39b2-874a-466d-b1d4-b672014fa8f3">
       <con:settings/>
@@ -543,60 +120,8 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite1_TestCase 9_20170608000752</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>9eb05084-d571-4515-8d0a-4c2e2ba8a19c</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:52+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:52+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
+
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 10" searchProperties="true" id="7983f3eb-b745-4818-b8ae-29a7f0853a38">
       <con:settings/>
@@ -609,7 +134,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -675,7 +200,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -741,7 +266,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -807,7 +332,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -873,7 +398,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -939,7 +464,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1005,7 +530,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1071,7 +596,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1137,7 +662,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1203,7 +728,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1269,7 +794,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1335,7 +860,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1401,7 +926,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1467,7 +992,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1533,7 +1058,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1599,7 +1124,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1665,7 +1190,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1731,7 +1256,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1797,7 +1322,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1863,7 +1388,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -1929,7 +1454,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2000,7 +1525,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -2066,7 +1591,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -2132,7 +1657,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -2198,7 +1723,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -2264,7 +1789,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2330,7 +1855,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2396,7 +1921,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2462,7 +1987,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2528,7 +2053,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2594,7 +2119,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2660,7 +2185,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2726,7 +2251,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2792,7 +2317,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2858,7 +2383,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2924,7 +2449,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -2990,7 +2515,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3056,7 +2581,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3122,7 +2647,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3188,7 +2713,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3254,7 +2779,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3320,7 +2845,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3386,7 +2911,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3452,7 +2977,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3518,7 +3043,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3584,7 +3109,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3650,7 +3175,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3716,7 +3241,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3782,7 +3307,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3848,7 +3373,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3914,7 +3439,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -3985,7 +3510,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -4051,7 +3576,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -4117,7 +3642,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -4183,7 +3708,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00010</con:value>
@@ -4249,7 +3774,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4315,7 +3840,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4381,7 +3906,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4447,7 +3972,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4513,7 +4038,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4579,7 +4104,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4645,7 +4170,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4711,7 +4236,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4777,7 +4302,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4843,7 +4368,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4909,7 +4434,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -4975,7 +4500,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5041,7 +4566,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5107,7 +4632,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5173,7 +4698,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5239,7 +4764,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5305,7 +4830,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5371,7 +4896,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5437,7 +4962,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5503,7 +5028,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
+      <con:properties/>
         <con:property>
           <con:name>COUNTER</con:name>
           <con:value>00009</con:value>
@@ -5569,60 +5094,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite3_TestCase 25_20170608000757</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>8a39bd82-c1be-46f1-bea9-fb92e56274f8</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:57+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 26" searchProperties="true" id="9719dbfc-ca4c-4651-a797-a5059d492d3d">
       <con:settings/>
@@ -5635,60 +5107,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite3_TestCase 26_20170608000757</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>bd407132-54ac-431c-a3d9-f890065bb9cf</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:57+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 27" searchProperties="true" id="b9e7364d-b088-47b1-ba0d-de212f645db4">
       <con:settings/>
@@ -5701,60 +5120,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite3_TestCase 27_20170608000757</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>c101c61b-1f54-43a8-9d95-c1f2a2a1e491</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:57+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 28" searchProperties="true" id="85544974-2fb3-4c0b-999c-5dbfe8f032c3">
       <con:settings/>
@@ -5767,60 +5133,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite3_TestCase 28_20170608000757</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>f4daf37a-d1e4-43de-a0d2-c9f63a62e354</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:57+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 29" searchProperties="true" id="717ef93e-c3c5-4f46-89ef-021026e4b4ea">
       <con:settings/>
@@ -5833,60 +5146,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite3_TestCase 29_20170608000757</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>915897cf-2361-44a3-af83-3b52eb4ef278</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:57+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:57+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>
     </con:testCase>
     <con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 30" searchProperties="true" id="c6d0c02b-0aeb-4095-b004-7c8a1a1b485a">
       <con:settings/>
@@ -5899,60 +5159,7 @@
             println "${testRunner.testCase.testSuite.name} - ${testRunner.testCase.name} is ended"</script>
         </con:config>
       </con:testStep>
-      <con:properties>
-        <con:property>
-          <con:name>COUNTER</con:name>
-          <con:value>00009</con:value>
-        </con:property>
-        <con:property>
-          <con:name>ORDERREF</con:name>
-          <con:value>rsettine_Run1_00009_http_TestSuite3_TestCase 30_20170608000758</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EXTERNAL_BUSINESSTRANSACTIONID</con:name>
-          <con:value>69448639-1f86-4a7b-86bf-cd84b8069e82</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_NOW</con:name>
-          <con:value>2017-06-08T00:07:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_10M_AHEAD</con:name>
-          <con:value>2017-06-08T00:17:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_15M_AHEAD</con:name>
-          <con:value>2017-06-08T00:22:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_20M_AHEAD</con:name>
-          <con:value>2017-06-08T00:27:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1H_AHEAD</con:name>
-          <con:value>2017-06-08T01:07:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2H_AHEAD</con:name>
-          <con:value>2017-06-08T02:07:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AHEAD</con:name>
-          <con:value>2017-06-09T00:07:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AHEAD</con:name>
-          <con:value>2017-06-10T00:07:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_1D_AGO</con:name>
-          <con:value>2017-06-07T00:07:58+05:30</con:value>
-        </con:property>
-        <con:property>
-          <con:name>REQUIRED_BY_DATE_2D_AGO</con:name>
-          <con:value>2017-06-06T00:07:58+05:30</con:value>
-        </con:property>
-      </con:properties>
+      <con:properties/>        
     </con:testCase>
     <con:properties/>
   </con:testSuite>
