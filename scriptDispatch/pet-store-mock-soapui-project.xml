@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4910ae16-3c5d-45c0-a856-a569d08aa5e6" activeEnvironment="Default" name="pet-store-mock" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="563c2c12-3d17-4a1a-b52e-ec44b865bdd7" wadlVersion="http://wadl.dev.java.net/2009/02" name="Swagger Petstore" type="rest" basePath="/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${#Project#END_POINT}</con:endpoint></con:endpoints><con:resource name="/pet" path="/pet" id="ccb154c9-3236-42e4-888c-1047840e8266"><con:settings/><con:parameters/><con:method name="addPet" id="16d0a9fa-182a-4fb0-803f-f25d66147c84" method="POST"><con:description>
+Add a new pet to the store</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>405</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>405 200</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/xml</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:pet="http://localhost/v2/pet">pet:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:element>error</con:element></con:representation><con:request name="Request 1" id="687ec20f-65d5-4931-9085-6406b6929c03" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#END_POINT}</con:endpoint><con:request/><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="12738356-60b4-4302-9fec-028516437ec3" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="13df4a59-3846-4b04-a63a-0cb8dbd4afd3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="200_OK" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="addPet_XML_200_OK" id="cc8021f7-7804-4bca-b767-5738985a452f"><con:settings/><con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="addPet_XML_200_OK" id="687ec20f-65d5-4931-9085-6406b6929c03" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="accept" value="application/xml" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#END_POINT}</con:endpoint><con:request><![CDATA[<Pet>
+<id>0</id>
+<Category>
+<id>0</id>
+<name>string</name>
+</Category>
+<name>doggie</name>
+<photoUrl>
+<photoUrls>string</photoUrls>
+</photoUrl>
+<tag>
+<Tag>
+<id>0</id>
+<name>string</name>
+</Tag>
+</tag>
+<status>available</status>
+</Pet>]]></con:request><con:originalUri>http://localhost/v2/pet</con:originalUri><con:assertion type="Simple Contains" id="87120cc4-b07c-4608-aaaa-c013631aac3d" name="Contains"><con:configuration><token>&lt;result>OK&lt;/result></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="addPet_JSON_200_OK" id="f0704b80-06a5-4e89-9b0d-857ba012133c"><con:settings/><con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="addPet_JSON_200_OK" id="687ec20f-65d5-4931-9085-6406b6929c03" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#END_POINT}</con:endpoint><con:request>{
+"id" : 0,
+"category" : {
+"id" : 0,
+"name" : "string"
+},
+"name" : "doggie",
+"photoUrls" : [ "string" ],
+"tags" : [ {
+"id" : 0,
+"name" : "string"
+} ],
+"status" : "available"
+}</con:request><con:originalUri>http://localhost/v2/pet</con:originalUri><con:assertion type="Simple Contains" id="921dea17-12c2-4e8a-b90b-8fe8c5352882" name="Contains"><con:configuration><token>{"result": "OK"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="207b2770-23f5-4ef2-a2f6-adb50026294a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Bad_Request" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="addPet_XML_400" id="0a55ed04-402b-49e2-ac03-89dd66146233"><con:settings/><con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="addPet_XML_400" id="687ec20f-65d5-4931-9085-6406b6929c03" mediaType="application/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="accept" value="application/xml" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#END_POINT}</con:endpoint><con:request><![CDATA[<Pet>
+<id>0</id>
+<Category>
+<id>0</id>
+<name>Jimmy</name>
+</Category>
+<name>dog</name>
+<photoUrl>
+<photoUrls>string</photoUrls>
+</photoUrl>
+<tag>
+<Tag>
+<id>0</id>
+<name>string</name>
+</Tag>
+</tag>
+<status>not available</status>
+</Pet>]]></con:request><con:originalUri>http://localhost/v2/pet</con:originalUri><con:assertion type="Simple Contains" id="5956092b-11f3-4fe6-8e1f-96931e1f3f12" name="Contains"><con:configuration><token>&lt;error>Invalid Request&lt;/error></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="addPet_JSON_400" id="1c2e3894-a210-41b2-b4a0-12f364b570e3"><con:settings/><con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="addPet_JSON_400" id="687ec20f-65d5-4931-9085-6406b6929c03" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#END_POINT}</con:endpoint><con:request>{
+"id" : 0,
+"category" : {
+"id" : 0,
+"name" : "string"
+},
+"name" : "dog",
+"photoUrls" : [ "string" ],
+"tags" : [ {
+"id" : 0,
+"name" : "Jimmy"
+} ],
+"status" : "not available"
+}</con:request><con:originalUri>http://localhost/v2/pet</con:originalUri><con:assertion type="Simple Contains" id="f0b0005d-0b4c-49cc-b2e7-e60907500012" name="Contains"><con:configuration><token>{"error": "Invalid Request"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="1118c92c-d15d-4b79-bf50-94aa269c1fe7" port="8089" path="/" host="rsettine-t480" name="REST MockService 1"><con:settings/><con:properties/><con:restMockAction name="/v2/pet" method="POST" resourcePath="/v2/pet" id="99ab13c9-81b0-4865-bac1-8d401b9fcc34"><con:settings/><con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">jsonResponse_BadRequest</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>//Constants
+def APPLICATION_XML = 'application/xml'
+def APPLICATION_JSON = 'application/json'
+
+//Closure to validate request content type and accept type
+def isValidDocType = { it in [APPLICATION_XML, APPLICATION_JSON]}
+
+//Closure to validate the input status in the request
+def isValidStatus = { it in ['available', 'pending', 'sold'] }
+
+//Map for the response document to send as response; prefix will be identified at run time down the line
+def responseSuffixMap = [200: 'Response_200', 400: 'Response_BadRequest']
+
+//Closure to find xml request and decide wether 200 or 400 status to send in response
+def isValidXml = {	
+	def xml = new XmlSlurper().parseText(it)
+	xml?.name?.text().size() >= 3 &amp;&amp; isValidStatus(xml?.status?.text()) ? 200 : 400
+}
+
+//Closure to find json request and decide wether 200 or 400 status to send in response
+def isValidJson = {
+	def json = new groovy.json.JsonSlurper().parseText(it)
+	json?.name?.size() >= 3 &amp;&amp; isValidStatus(json?.status) ? 200 : 400
+}
+
+//Method to read the request headers
+def getHeaderValue(key) { 
+	mockRequest.requestHeaders.get(key).first() 
+}
+
+//Handle invalid documents using headers
+if (!isValidDocType(getHeaderValue('Content-Type'))) {
+	return "UnknownContentType"
+}
+if (!isValidDocType(getHeaderValue('Accept'))) {
+	return "UnknownAccept"
+}
+
+//Identify the response prefix based on the user request
+def responsePrefix = getHeaderValue('Accept').split('/')[1]
+
+//Actual logic
+def resultCode 
+switch (getHeaderValue('Content-Type')) {
+	case APPLICATION_XML:
+		resultCode = isValidXml(mockRequest.getRequestContent())
+		break;
+	case APPLICATION_JSON:
+		resultCode = isValidJson(mockRequest.getRequestContent())
+		break;
+	default:
+		break;
+}
+return responsePrefix + responseSuffixMap[resultCode]</con:dispatchPath><con:response name="jsonResponse_200" id="ce58b206-b276-48f9-9033-ef18633fb308" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{"result": "OK"}</con:responseContent></con:response><con:response name="jsonResponse_BadRequest" id="e515848c-17bc-46c8-98b5-4a2fe604eb6a" httpResponseStatus="400" mediaType="application/json"><con:settings/><con:responseContent>{"error": "Invalid Request"}</con:responseContent></con:response><con:response name="xmlResponse_200" id="6c73248c-a757-4b6a-98e6-dbe3119a3785" httpResponseStatus="200"><con:settings/><con:responseContent>&lt;result>OK&lt;/result></con:responseContent></con:response><con:response name="xmlResponse_BadRequest" id="ea866c7a-00fb-4536-a846-a52c2714f38d" httpResponseStatus="400"><con:settings/><con:responseContent>&lt;error>Invalid Request&lt;/error></con:responseContent></con:response><con:response name="UnknownContentType" id="ecdc6a4c-841b-464a-ad09-4237a077461d" httpResponseStatus="406" mediaType="text/xml"><con:settings/><con:responseContent>Unknown Content-Type. Set the correct value for "Media Type". Accepted are "application/xml", "application/json"</con:responseContent></con:response><con:response name="UnknownAccept" id="4a5d1b92-07a1-4588-ba71-90c817c44936" httpResponseStatus="406" mediaType="text/xml"><con:settings/><con:responseContent>Unknown "accept" header. Set the correct value for "accept" header. Accepted are "application/xml", "application/json"</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties><con:property><con:name>END_POINT</con:name><con:value>http://localhost:8089/</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
