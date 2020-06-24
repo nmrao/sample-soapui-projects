@@ -60,7 +60,7 @@ Add a new pet to the store</con:description><con:settings/><con:parameters/><con
 "name" : "Jimmy"
 } ],
 "status" : "not available"
-}</con:request><con:originalUri>http://localhost/v2/pet</con:originalUri><con:assertion type="Simple Contains" id="f0b0005d-0b4c-49cc-b2e7-e60907500012" name="Contains"><con:configuration><token>{"error": "Invalid Request"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="1118c92c-d15d-4b79-bf50-94aa269c1fe7" port="8089" path="/" host="127.0.0.1" name="REST MockService 1"><con:settings/><con:properties/><con:restMockAction name="/v2/pet" method="POST" resourcePath="/v2/pet" id="99ab13c9-81b0-4865-bac1-8d401b9fcc34"><con:settings/><con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">jsonResponse_BadRequest</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>//Constants
+}</con:request><con:originalUri>http://localhost/v2/pet</con:originalUri><con:assertion type="Simple Contains" id="f0b0005d-0b4c-49cc-b2e7-e60907500012" name="Contains"><con:configuration><token>{"error": "Invalid Request"}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="1118c92c-d15d-4b79-bf50-94aa269c1fe7" port="8089" path="/" host="localhost" name="REST MockService 1"><con:settings/><con:properties/><con:restMockAction name="/v2/pet" method="POST" resourcePath="/v2/pet" id="99ab13c9-81b0-4865-bac1-8d401b9fcc34"><con:settings/><con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">jsonResponse_BadRequest</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>//Constants
 def APPLICATION_XML = 'application/xml'
 def APPLICATION_JSON = 'application/json'
 def ACCEPT = 'Accept'
@@ -76,13 +76,13 @@ def isValidStatus = { it in ['available', 'pending', 'sold'] }
 def responseSuffixMap = [200: 'Response_200', 400: 'Response_BadRequest']
 
 //Closure to find xml request and decide whether 200 or 400 status to send in response
-def isValidXml = {	
+def getXmlResultCode = {	
 	def xml = new XmlSlurper().parseText(it)
 	xml?.name?.text().size() >= 3 &amp;&amp; isValidStatus(xml?.status?.text()) ? 200 : 400
 }
 
 //Closure to find json request and decide whether 200 or 400 status to send in response
-def isValidJson = {
+def getJsonResultCode = {
 	def json = new groovy.json.JsonSlurper().parseText(it)
 	json?.name?.size() >= 3 &amp;&amp; isValidStatus(json?.status) ? 200 : 400
 }
@@ -104,13 +104,13 @@ if (!isValidDocType(getHeaderValue(ACCEPT))) {
 def responsePrefix = getHeaderValue(ACCEPT).split('/')[1]
 
 //Actual logic
-def resultCode 
+def resultCode = 400
 switch (getHeaderValue(CONTENT_TYPE)) {
 	case APPLICATION_XML:
-		resultCode = isValidXml(mockRequest.getRequestContent())
+		resultCode = getXmlResultCode(mockRequest.getRequestContent())
 		break;
 	case APPLICATION_JSON:
-		resultCode = isValidJson(mockRequest.getRequestContent())
+		resultCode = getJsonResultCode(mockRequest.getRequestContent())
 		break;
 	default:
 		break;
