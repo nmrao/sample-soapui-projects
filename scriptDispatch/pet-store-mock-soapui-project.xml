@@ -75,13 +75,13 @@ def isValidStatus = { it in ['available', 'pending', 'sold'] }
 //Map for the response document to send as response; prefix will be identified at run time down the line
 def responseSuffixMap = [200: 'Response_200', 400: 'Response_BadRequest']
 
-//Closure to find xml request and decide wether 200 or 400 status to send in response
+//Closure to find xml request and decide whether 200 or 400 status to send in response
 def isValidXml = {	
 	def xml = new XmlSlurper().parseText(it)
 	xml?.name?.text().size() >= 3 &amp;&amp; isValidStatus(xml?.status?.text()) ? 200 : 400
 }
 
-//Closure to find json request and decide wether 200 or 400 status to send in response
+//Closure to find json request and decide whether 200 or 400 status to send in response
 def isValidJson = {
 	def json = new groovy.json.JsonSlurper().parseText(it)
 	json?.name?.size() >= 3 &amp;&amp; isValidStatus(json?.status) ? 200 : 400
