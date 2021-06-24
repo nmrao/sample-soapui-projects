@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="1e2de4c9-d782-4275-af33-a80862b3a76c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DynamicDelay" searchProperties="true">
+   <con:settings />
+   <con:testStep type="groovy" name="Groovy Script" id="99c0760a-4fc1-43df-af31-261c1aaba736">
+      <con:settings />
+      <con:config>
+         <script>//Closure to show the custom delay property information
+def showPropertyInfo = { log.info "$it value of CUSTOM_DELAY ${context.testCase.getPropertyValue('CUSTOM_DELAY')}" }
+//Access the current custom delay value of test case property
+showPropertyInfo('Initial')
+//Get the test step of Delay
+def step = context.testCase.testStepList[context.currentStepIndex+1]
+
+//Closure show if the test step is enabled or disabled
+def isStepDisabled = { 	log.info "Is ${step.name} step disabled? : ${step.disabled ? 'Yes' : 'No' }" }
+
+//Closure executing step
+def runTest = { count, delayTime -&gt;
+	context.testCase.setPropertyValue('CUSTOM_DELAY', delayTime.toString())
+	isStepDisabled(step)
+	showPropertyInfo("Run # : ${count} Executing ${step.name} step ")	
+	step.run(testRunner, context)
+	log.info "===Finished running the step ${step.name}==="
+}
+def activateStep = { 
+	//Disable Delat step
+	log.info "Chaging ${step.name} step active status to ${it}"
+	step.disabled = !it
+}
+//Run #1
+runTest(1, 3000)
+activateStep(false)
+
+//Run #2
+runTest(2, 10000)
+activateStep(true)
+
+//Reset delay to 1sec
+context.testCase.setPropertyValue('CUSTOM_DELAY', '1000')
+log.info 'done'</script>
+      </con:config>
+   </con:testStep>
+   <con:testStep type="delay" name="Delay" id="37bdfc1d-c9b2-4bdc-9029-7e500a363a1a">
+      <con:settings />
+      <con:config>
+         <delay>${=testCase.properties["CUSTOM_DELAY"].value}</delay>
+      </con:config>
+   </con:testStep>
+   <con:properties>
+      <con:property>
+         <con:name>CUSTOM_DELAY</con:name>
+         <con:value>1000</con:value>
+      </con:property>
+   </con:properties>
+</con:testCase>
