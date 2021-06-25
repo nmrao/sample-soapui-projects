@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="231f27a1-dc7b-4575-87f6-b93de9fac2c7" activeEnvironment="Default" name="testProperties" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:testSuite id="bfed341d-47cf-4ed5-ad24-edff8e35c039" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fa53edfb-d5a6-4b89-b479-f61e83b04854" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="3cdc6b50-efc3-4cb6-815b-920540b28c21"><con:settings/><con:config><script>log.info 'Following are the project properties'
+log.info "ENVIRONMENT_NAME => ${context.expand('${#Project#ENVIRONMENT_NAME}')}"
+log.info "SERVICE_HOST => ${context.expand('${#Project#SERVICE_HOST}')}"
+log.info "SERVICE_PORT => ${context.expand('${#Project#SERVICE_PORT}')}"
+log.info "DB_HOST => ${context.expand('${#Project#DB_HOST}')}"</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>DB_HOST</con:name><con:value>r1.testdb.com</con:value></con:property><con:property><con:name>ENVIRONMENT_NAME</con:name><con:value>qa : r1</con:value></con:property><con:property><con:name>SERVICE_HOST</con:name><con:value>r1.host1.com</con:value></con:property><con:property><con:name>SERVICE_PORT</con:name><con:value>8443</con:value></con:property></con:properties><con:afterLoadScript>def arguments = [config: null, env: null, release: null ]
+def setArugments = { 	arguments.keySet().each { arguments[it] = System.properties[it] } }
+def validateArugments = { 			
+	if (!(arguments.values().every{ it } ))  { 
+		println "Ensure ${arguments.keySet()} aruments are set while invoking test"
+		System.exit(1)
+	}
+}
+setArugments()
+validateArugments()
+def configFile = new File(arguments.config)
+def configuration = new ConfigSlurper().parse(configFile.text)
+log.info "Using ${arguments.env} environment for the software version ${arguments.release}"
+project.setPropertyValue('ENVIRONMENT_NAME', "${arguments.env} : ${arguments.release}")
+//println configuration.environment."${arguments.env}"."${arguments.release}"
+configuration.environment."${arguments.env}"."${arguments.release}".each { k, v -> project.setPropertyValue(k.toString(), v.toString()) }
+
+</con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
