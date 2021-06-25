@@ -61,7 +61,7 @@ environment {
 
 Running the test on QA environment for release r1
 ```
-./testrunner.sh testProperties-soapui-project.xml -Penv=qa -Prelease=r1 -Pconfig=/tmp/Config.groovy
+bash $ ./testrunner.sh testProperties-soapui-project.xml -Penv=qa -Prelease=r1 -Pconfig=/tmp/Config.groovy
 ```
 Log excerpt from command line execution.
 NOTE: the **log** statements below
