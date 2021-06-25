@@ -6,10 +6,11 @@ Many times users have multiple test environments to execute the soapui project
 This is very easy achieve and manage if the property expansion are used in the project. 
 _For ex:_
 >whereever service host and port are needed, use ${#Project#SERVICE_HOST}, ${#Project#SERVICE_PORT}
+>
 >Similarly any number of properties be used
 
 In this approach, it does not matter what values for the project properties are saved. SOAPUI / ReadyAPI tools allows user to override those property values during the test execution from the command-line with a project property as arugment so that existing project properties are overridden.
-- Here the use wants use single configuration for all the environments. For this, we can leverage the groovy for configuration of different environments. 
+- Here the user wants use single configuration for all the environments. For this, we can leverage the groovy for configuration of different environments. 
 - Also not just environments, but also like to have configurations for different software versions.
 - User can also have generic properties which are common for all the environments in `common`  section of the Config.groovy.
 
