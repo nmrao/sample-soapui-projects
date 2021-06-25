@@ -118,3 +118,11 @@ bash $ ./testrunner.sh testProperties-soapui-project.xml -Pconfig=/tmp/Config.gr
     release => software version used from the above configuration file
 
 -- Execute the project level Setup Script or execute the project directly
+
+#### How to adopt this solution to your project?
+
+- Have the `config, env, release` properties in the project. No need to provide values as they are overridden by testrunner command when user provides `-P` option as mentioned in the above example.
+- Please loook at the Project level `Setup Script, Teardown Scripts`. Just copy the both into your project.
+- Create your own `Config.groovy` file as environment properties. Please note that do not change the names of `common, environment`. Rest you can change any. Accordingly use the Project level propties to access these values confiured in groovy file.
+
+
