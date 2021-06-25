@@ -64,6 +64,7 @@ Running the test on QA environment for release r1
 bash $ ./testrunner.sh testProperties-soapui-project.xml -Penv=qa -Prelease=r1 -Pconfig=/tmp/Config.groovy
 ```
 Log excerpt from command line execution.
+
 NOTE: the **log** statements below
 ```
 13:02:40,078 INFO  [SoapUITestCaseRunner] Setting project property [config] to [/tmp/Config.groovy]
