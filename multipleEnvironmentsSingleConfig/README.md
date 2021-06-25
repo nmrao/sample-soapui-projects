@@ -15,7 +15,7 @@ In this approach, it does not matter what values for the project properties are 
 - User can also have generic properties which are common for all the environments in `common`  section of the Config.groovy.
 
 #### Project
-To domonstrate how this works, create a project and required artifacts to test this approach.
+To domonstrate how this works, created a project and required artifacts to test this approach.
 - This project contains a _Test Suite => Test Case => Groovy Script_ test step.
 - The _Groovy Script_ test step access the project properties. Of course, any test step in the project can access these properties.
 - All the configurations are mentioned in the `Config.groovy`. This very easy to define configuration as well simple exapmple. This is like data as code.
