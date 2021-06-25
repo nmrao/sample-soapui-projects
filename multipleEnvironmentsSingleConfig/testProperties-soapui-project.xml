@@ -34,21 +34,26 @@
 log.info "ENVIRONMENT_NAME => ${context.expand('${#Project#ENVIRONMENT_NAME}')}"
 log.info "SERVICE_HOST => ${context.expand('${#Project#SERVICE_HOST}')}"
 log.info "SERVICE_PORT => ${context.expand('${#Project#SERVICE_PORT}')}"
-log.info "DB_HOST => ${context.expand('${#Project#DB_HOST}')}"</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>DB_HOST</con:name><con:value>r1.testdb.com</con:value></con:property><con:property><con:name>ENVIRONMENT_NAME</con:name><con:value>qa : r1</con:value></con:property><con:property><con:name>SERVICE_HOST</con:name><con:value>r1.host1.com</con:value></con:property><con:property><con:name>SERVICE_PORT</con:name><con:value>8443</con:value></con:property></con:properties><con:afterLoadScript>def arguments = [config: null, env: null, release: null ]
-def setArugments = { 	arguments.keySet().each { arguments[it] = System.properties[it] } }
-def validateArugments = { 			
+log.info "DB_HOST => ${context.expand('${#Project#DB_HOST}')}"
+log.info "USER => ${context.expand('${#Project#USER}')}"</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>config</con:name><con:value>Config.groovy</con:value></con:property><con:property><con:name>env</con:name><con:value>qa</con:value></con:property><con:property><con:name>release</con:name><con:value>r1.1</con:value></con:property></con:properties><con:afterLoadScript/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:beforeRunScript>def arguments = [config: null, env: null, release: null ]
+def setArugments = { 	arguments.keySet().each { arguments[it] = project.getPropertyValue(it) } }
+def validateArugments = { 
 	if (!(arguments.values().every{ it } ))  { 
-		println "Ensure ${arguments.keySet()} aruments are set while invoking test"
-		System.exit(1)
+		log.error "Ensure ${arguments.keySet()} aruments are set while invoking test"		
 	}
 }
+def setProps = { k, v -> project.setPropertyValue(k.toString(), v.toString()) }
 setArugments()
 validateArugments()
-def configFile = new File(arguments.config)
-def configuration = new ConfigSlurper().parse(configFile.text)
-log.info "Using ${arguments.env} environment for the software version ${arguments.release}"
-project.setPropertyValue('ENVIRONMENT_NAME', "${arguments.env} : ${arguments.release}")
-//println configuration.environment."${arguments.env}"."${arguments.release}"
-configuration.environment."${arguments.env}"."${arguments.release}".each { k, v -> project.setPropertyValue(k.toString(), v.toString()) }
-
-</con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+project.metaClass.arguments = { arguments }
+if (arguments.config) {
+	def configFile = new File(arguments.config)
+	def configuration = new ConfigSlurper().parse(configFile.text)
+	log.info "Using ${arguments.env} environment for the software version ${arguments.release}"
+	project.setPropertyValue('ENVIRONMENT_NAME', "${arguments.env} : ${arguments.release}")
+	configuration.environment."${arguments.env}"."${arguments.release}".each ( setProps )
+	configuration.common.each (setProps)
+} else {
+	log.error "Haven't set the project properties as configuration file has not been passed"
+}
+</con:beforeRunScript><con:afterRunScript>project.propertyNames.findAll { !project.arguments().keySet().contains(it) }.each { project.removeProperty(it)}	</con:afterRunScript><con:sensitiveInformation/></con:soapui-project>
