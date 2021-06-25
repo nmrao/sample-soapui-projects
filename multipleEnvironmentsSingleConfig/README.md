@@ -12,7 +12,7 @@ _For ex:_
 In this approach, it does not matter what values for the project properties are saved. SOAPUI / ReadyAPI tools allows user to override those property values during the test execution from the command-line with a project property as arugment so that existing project properties are overridden.
 - Here the user wants use single configuration for all the environments. For this, we can leverage the groovy for configuration of different environments. 
 - Not only environments, but also like to have configurations for different software versions.
-- User can also have generic properties which are common for all the environments in `common`  section of the Config.groovy.
+- User can also have generic properties which are common for all the environments in `common`  section of the [Config.groovy](https://github.com/nmrao/sample-soapui-projects/blob/master/multipleEnvironmentsSingleConfig/Config.groovy).
 
 #### Project
 To domonstrate how this works, created a project and required artifacts to test this approach.
