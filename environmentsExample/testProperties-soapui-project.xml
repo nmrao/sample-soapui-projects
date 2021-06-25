@@ -42,10 +42,11 @@
          <con:testStep type="groovy" name="Groovy Script" id="3cdc6b50-efc3-4cb6-815b-920540b28c21">
             <con:settings />
             <con:config>
-               <script>log.info context.expand('${#Project#ENVIRONMENT_NAME}')
-log.info context.expand('${#Project#SERVICE_HOST}')
-log.info context.expand('${#Project#SERVICE_PORT}')
-log.info context.expand('${#Project#DB_HOST}')</script>
+               <script>log.info 'Following are the project properties'
+log.info "ENVIRONMENT_NAME => ${context.expand('${#Project#ENVIRONMENT_NAME}')}"
+log.info "SERVICE_HOST => ${context.expand('${#Project#SERVICE_HOST}')}"
+log.info "SERVICE_PORT => ${context.expand('${#Project#SERVICE_PORT}')}"
+log.info "DB_HOST => ${context.expand('${#Project#DB_HOST}')}"</script>
             </con:config>
          </con:testStep>
          <con:properties />
