@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8312bdff-bbbe-4a4b-a155-5f9228d2657d" activeEnvironment="Default" name="addSetupTearDown" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="de8d9af6-9259-4799-8d16-9a46a9727b30" name="suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d4349037-845c-48e4-a484-238072d23468" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="setSetupAndTearDown" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="7b853d94-dfff-412a-8073-4ad08e384f73"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.WsdlProject
+def otherwise = { log.error "$it"; throw new Error("$it") }
+def getFile = { 
+	def value = context.testCase.testSuite.project.getPropertyValue(it)
+	if (value) {
+		def f = new File(value)
+		if (f.exists()) { return f }
+		else { otherwise "File is not present $value" } 	
+	} else { otherwise "Project property $it not passed as input" }	
+}
+def originalProjectFile = getFile('PROJECT')
+def setupFile = getFile('SETUP')
+def teardownFile = getFile('TEARDOWN')
+def updatedProjectPath = System.getProperty('java.io.tmpdir')+'/'+originalProjectFile.name
+if (updatedProjectPath) {
+	def suites = context.expand('${#Project#SUITE}')?.split(',')*.trim()
+	if (suites) {
+		def originalProject = new WsdlProject(originalProjectFile.path)
+		def mySuites = originalProject.testSuiteList?.findAll { it.name in suites }
+		if (mySuites) {
+			mySuites.each { suite ->
+				suite.testCaseList.each {
+					it.setupScript = setupFile.text
+					it.tearDownScript = teardownFile.text				 
+				}
+			}
+			log.info "${updatedProjectPath} is being created with setup and teardown scripts for the given suites"
+			originalProject.saveAs(updatedProjectPath)			
+		} else { 
+			otherwise "Project doesn't have the specified suite: ${suite}" 
+		}
+	} else { 
+		otherwise "Suite can't be empty : ${suite}" 
+	}
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>PROJECT</con:name><con:value/></con:property><con:property><con:name>SUITE</con:name><con:value/></con:property><con:property><con:name>SETUP</con:name><con:value/></con:property><con:property><con:name>TEARDOWN</con:name><con:value/></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
