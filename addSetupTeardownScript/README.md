@@ -40,6 +40,9 @@ If you look at the above, it is clear that we need to pass following project lev
 
 And the last one is path to [this project](https://github.com/nmrao/sample-soapui-projects/blob/master/addSetupTeardownScript/addSetupTearDown-soapui-project.xml)
 
+The above command will create a new probject under your system temp directory with same project name as yours. This is to ensure that your original project is not modified or you can execute the above command multiple times. Try importing the newly created project in the tool and see if you can find the _setup and teardown scripts_ for each of the test cases of given test suite(s).
+
+
 ##### NOTE: 
 - This project is created and tested in SoapUI OS 5.4 version. It should work with ReadAPI as well.- 
-- Have back of your original project before running this project.
+
