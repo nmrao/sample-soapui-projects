@@ -9,6 +9,7 @@ This project reads external files and add them to setup and teardown scripts for
 
 
 #### How to run this project?
+You need to [this project](https://github.com/nmrao/sample-soapui-projects/blob/master/addSetupTeardownScript/addSetupTearDown-soapui-project.xml) with **testrunner** utility.
 
 ##### on linux
 ```
