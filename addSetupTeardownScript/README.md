@@ -30,3 +30,4 @@ If you look at the above, it is clear that we need to pass following parameters 
 
 And the last one is path to [this project] (https://github.com/nmrao/sample-soapui-projects/blob/master/addSetupTeardownScript/addSetupTearDown-soapui-project.xml)
 
+NOTE: this project is created and tested in SoapUI OS 5.4 version. It should work with ReadAPI as well.
