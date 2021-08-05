@@ -22,7 +22,7 @@ cd %SOAPUI_HOME%\bbin
 testrunner.bat -P PROJECT=/path/to//original-test-soapui-project.xml -P SUITE="TestSuite 4, TestSuite 5" -P SETUP=/tmp/setup.groovy -P TEARDOWN=/tmp/teardown.groovy /path/to/this/addSetupTearDown-soapui-project.xml
 ```
 
-If you look at the above, it is clear that we need to pass following parameters to `testrunner` utility.
+If you look at the above, it is clear that we need to pass following project level parameters to `testrunner` utility.
 
 - PROJECT : this is path of the project to which you like to add the setup and teardown scripts
 - SUITE : name of the test suite(s). If there are more than one, separate them by comma and enclose the values between double quotes as shown above.
