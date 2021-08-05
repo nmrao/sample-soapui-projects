@@ -7,6 +7,15 @@ This project reads external files and add them to setup and teardown scripts for
 - Required to add the same setup and teardown scripts for each of the test case of given test suite(s)
 - Running this project will add the same to your project.
 
+#### What does this project contain?
+Just a simple groovy script test step in a test case.
+
+#### Why project instead of script?
+Simple reason is to ease of use. 
+
+In this case, once end user run this project (without even opening this project in the SoapUI or ReadyAPI tool) from command line, he does not need to bother anything about this project or script that it contains.
+
+If it is provided as script, then end user will have  confusion, where the script should be copied as it doen't really belong this project, yet need to use. Modify value in the script, and remove this step from his project again. As individual project, all it make more simple to use.
 
 #### How to run this project?
 You need to run [addSetupTearDown-soapui-project.xml](https://github.com/nmrao/sample-soapui-projects/blob/master/addSetupTeardownScript/addSetupTearDown-soapui-project.xml) project with **testrunner** utility.
