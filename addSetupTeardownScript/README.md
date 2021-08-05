@@ -24,10 +24,10 @@ testrunner.bat -P PROJECT=/path/to//original-test-soapui-project.xml -P SUITE="T
 
 If you look at the above, it is clear that we need to pass following project level parameters to `testrunner` utility.
 
-- PROJECT : this is path of the project to which you like to add the setup and teardown scripts
-- SUITE : name of the test suite(s). If there are more than one, separate them by comma and enclose the values between double quotes as shown above.
-- SETUP : this is the absolute path of the setup script
-- TEARDOWN : this is the path of the teardown script.
+- _PROJECT_ : this is path of the project to which you like to add the setup and teardown scripts
+- _SUITE_ : name of the test suite(s). If there are more than one, separate them by comma and enclose the values between double quotes as shown above.
+- _SETUP_ : this is the absolute path of the setup script
+- _TEARDOWN_ : this is the path of the teardown script.
 
 And the last one is path to [this project](https://github.com/nmrao/sample-soapui-projects/blob/master/addSetupTeardownScript/addSetupTearDown-soapui-project.xml)
 
